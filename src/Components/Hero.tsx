@@ -1,3 +1,5 @@
+import victorImage from "../assets/victor.png";
+
 const Hero = () => {
   return (
     <section
@@ -57,7 +59,7 @@ const Hero = () => {
             {/* SOCIALS */}
             <div className="flex items-center gap-5 mt-10">
               <a
-                href="#"
+                href="https://github.com/Viktor10tek"
                 className="text-sm font-medium text-muted hover:text-primary hover:underline transition"
               >
                 GitHub ↗
@@ -66,7 +68,7 @@ const Hero = () => {
               <span className="text-border">/</span>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/victor-adams-0a3b4c/"
                 className="text-sm font-medium text-muted hover:text-primary transition"
               >
                 LinkedIn ↗
@@ -86,7 +88,7 @@ const Hero = () => {
               {/* IMAGE */}
               <div className="relative w-80 h-96 md:w-[380px] md:h-[460px] lg:w-[440px] lg:h-[540px] rounded-[2rem] overflow-hidden bg-accent shadow-2xl glow">
                 <img
-                  src="/src/assets/victor.png"
+                  src={victorImage}
                   alt="Victor"
                   className="w-full h-full object-cover scale-105 hover:scale-110 transition duration-700"
                 />
