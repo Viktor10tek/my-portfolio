@@ -100,10 +100,10 @@ const Contact = () => {
               <p className="text-sm text-muted">Email</p>
 
               <a
-                href="mailto:your@email.com"
+                href="mailto:vicadams4real@gmail.com"
                 className="inline-block mt-2 text-lg font-semibold text-white hover:text-primary hover:underline transition"
               >
-                your@email.com
+                vicadams4real@gmail.com
               </a>
             </div>
 
@@ -111,7 +111,7 @@ const Contact = () => {
             <div className="mt-7">
               <p className="text-sm text-muted">Phone</p>
 
-              <p className="mt-2 text-lg font-semibold">+234 XXX XXX XXXX</p>
+              <p className="mt-2 text-lg font-semibold">+2348032787704</p>
             </div>
 
             {/* LOCATION */}
@@ -127,14 +127,14 @@ const Contact = () => {
 
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="#"
+                  href="https://github.com/Viktor10tek"
                   className="px-5 py-2.5 border border-border rounded-full text-sm font-medium text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition duration-300"
                 >
                   GitHub ↗
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/victor-adams-0a3b4c/"
                   className="px-5 py-2.5 border border-border rounded-full text-sm font-medium text-gray-300 hover:bg-primary hover:text-white hover:border-primary transition duration-300"
                 >
                   LinkedIn ↗
