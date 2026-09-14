@@ -30,15 +30,18 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: "POST",
 
-        headers: {
-          "Content-Type": "application/json",
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify(formData),
         },
-
-        body: JSON.stringify(formData),
-      });
+      );
 
       const data = await response.json();
 
@@ -153,6 +156,16 @@ const Contact = () => {
               </div>
             )}
 
+            {error && (
+              <div className="mb-7 p-4 rounded-2xl bg-red-500/10 border border-red-500/30">
+                <p className="font-semibold text-red-400">
+                  Something went wrong ❌
+                </p>
+
+                <p className="text-sm text-muted mt-1">{error}</p>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit}>
               {/* NAME */}
               <div>
@@ -171,7 +184,9 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Enter your name"
                   required
-                  className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition"
+                  className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white
+                   placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2
+                    focus:ring-primary/10 transition"
                 />
               </div>
 
