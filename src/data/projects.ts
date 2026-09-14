@@ -1,3 +1,8 @@
+import nexcentImage from "../assets/Nexcent.png";
+import worknestImage from "../assets/Worknest.png";
+import youtubeImage from "../assets/Youtube.png";
+import fyloImage from "../assets/Fylo.jpg";
+
 export type Project = {
   title: string;
   slug: string;
@@ -25,7 +30,7 @@ export const projects: Project[] = [
 
     technologies: ["React", "TypeScript", "Tailwind CSS"],
 
-    image: "/src/assets/Nexcent.png",
+    image: nexcentImage,
 
     liveUrl: "#",
     githubUrl: "#",
@@ -62,7 +67,7 @@ export const projects: Project[] = [
       "MongoDB",
     ],
 
-    image: "/src/assets/Worknest.png",
+    image: worknestImage,
 
     contribution: [
       "Contributing to the React and TypeScript frontend.",
@@ -91,7 +96,7 @@ export const projects: Project[] = [
 
     technologies: ["HTML", "CSS", "JavaScript"],
 
-    image: "/src/assets/Youtube.png",
+    image: youtubeImage,
 
     liveUrl: "#",
     githubUrl: "#",
@@ -122,7 +127,7 @@ export const projects: Project[] = [
 
     technologies: ["HTML", "CSS"],
 
-    image: "/src/assets/Fylo.jpg",
+    image: fyloImage,
 
     liveUrl: "#",
     githubUrl: "#",
