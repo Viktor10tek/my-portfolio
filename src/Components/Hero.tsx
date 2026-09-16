@@ -7,9 +7,9 @@ const Hero = () => {
       className="relative min-h-[calc(100vh-80px)] flex items-center px-6 py-16 md:px-12 lg:px-20 bg-[#0f0f17] overflow-hidden"
     >
       {/* BACKGROUND GLOW */}
-      <div className="absolute top-10 left-[-150px] w-[350px] h-[350px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-10 -left-37.5 w-87.5 h-87.5 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="absolute bottom-[-150px] right-[-100px] w-[400px] h-[400px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute -bottom-37.5 -right-25 w-100 h-100 bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -27,7 +27,7 @@ const Hero = () => {
             </h1>
 
             <div className="mt-6 flex items-center gap-3">
-              <span className="w-10 h-[3px] bg-primary rounded-full" />
+              <span className="w-10 h-0.75 bg-primary rounded-full" />
 
               <h2 className="text-xl md:text-2xl font-semibold">
                 Full-Stack Developer
@@ -80,13 +80,13 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* OUTER GLOW */}
-              <div className="absolute inset-0 rounded-[2rem] bg-primary/20 blur-[50px] scale-90" />
+              <div className="absolute inset-0 rounded-4xl bg-primary/20 blur-[50px] scale-90" />
 
               {/* DECORATIVE FRAME */}
-              <div className="absolute -top-5 -right-5 w-full h-full rounded-[2rem] border-2 border-primary/30" />
+              <div className="absolute -top-5 -right-5 w-full h-full rounded-4xl border-2 border-primary/30" />
 
               {/* IMAGE */}
-              <div className="relative w-80 h-96 md:w-[380px] md:h-[460px] lg:w-[440px] lg:h-[540px] rounded-[2rem] overflow-hidden bg-accent shadow-2xl glow">
+              <div className="relative w-80 h-96 md:w-95 md:h-115 lg:w-110 lg:h-135 rounded-4xl overflow-hidden bg-accent shadow-2xl glow">
                 <img
                   src={victorImage}
                   alt="Victor"
