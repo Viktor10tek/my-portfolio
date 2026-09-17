@@ -10,6 +10,7 @@ const projects = [
       "A responsive landing page built from a Figma design using HTML and CSS.",
     image: Nexcent,
     github: "https://github.com/Viktor10tek/nexcent",
+    live: "https://nexcent-olive-kappa.vercel.app/",
     status: "Completed",
   },
   {
@@ -18,6 +19,7 @@ const projects = [
       "A YouTube-inspired interface built as part of my frontend development practice.",
     image: Youtube,
     github: "https://github.com/Viktor10tek/Youtube-Clone",
+    live: "https://youtube-clone-chi-pink-21.vercel.app/",
     status: "Completed",
   },
   {
@@ -26,6 +28,7 @@ const projects = [
       "A responsive dark-themed landing page built from a Frontend Mentor design.",
     image: Fylo,
     github: "https://github.com/Viktor10tek/Fylo-Dark",
+    live: "https://viktor10tek-fylo-dark.vercel.app/",
     status: "Completed",
   },
   {
@@ -71,15 +74,26 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {project.github ? (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block rounded-lg bg-purple-600 px-5 py-2.5 font-medium text-white transition hover:bg-purple-700"
-                  >
-                    View on GitHub
-                  </a>
+                {project.live && project.github ? (
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg bg-purple-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-purple-700"
+                    >
+                      View Live Site
+                    </a>
+
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg border border-gray-600 px-4 py-2.5 text-sm font-medium text-gray-300 transition hover:border-purple-500 hover:text-white"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 ) : (
                   <span className="inline-block rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-5 py-2.5 font-medium text-yellow-400">
                     {project.status}

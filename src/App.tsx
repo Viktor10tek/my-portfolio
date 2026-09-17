@@ -12,16 +12,13 @@ import ProjectDetails from "./pages/projectDetails";
 
 const Home = () => {
   return (
-    <>
-     
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-    </>
+    <main>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </main>
   );
 };
 
@@ -29,7 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      
+
       <Navbar />
 
       <Routes>
