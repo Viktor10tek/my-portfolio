@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import vikitekLogo from "../assets/vikitek.png";
+import vikitekLogo from "../assets/Vikitek.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
