@@ -47,7 +47,7 @@ const Skills = () => {
         {/* SKILL CARDS */}
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* FRONTEND */}
-          <div className="group rounded-3xl border border-border bg-[#171722] p-8 transition duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5">
+          <div className="group rounded-3xl border border-border bg-[rgb(23,23,34)] p-8 transition duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-xl font-bold text-primary transition duration-300 group-hover:scale-110">
               &lt;/&gt;
             </div>
@@ -72,7 +72,7 @@ const Skills = () => {
           </div>
 
           {/* BACKEND */}
-          <div className="group rounded-3xl border border-border bg-[#171722] p-8 transition duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5">
+          <div className="group rounded-3xl border border-border bg-[rgb(23,23,34)] p-8 transition duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-xl font-bold text-primary transition duration-300 group-hover:scale-110">
               {"{ }"}
             </div>
@@ -97,7 +97,7 @@ const Skills = () => {
           </div>
 
           {/* TOOLS */}
-          <div className="group rounded-3xl border border-border bg-[#171722] p-8 transition duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5 md:col-span-2 lg:col-span-1">
+          <div className="group rounded-3xl border border-border bg-[rgb(23,23,34)] p-8 transition duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/5 md:col-span-2 lg:col-span-1">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-xl text-primary transition duration-300 group-hover:scale-110">
               ⚙
             </div>
@@ -115,7 +115,7 @@ const Skills = () => {
               {tools.map((tool) => (
                 <span
                   key={tool}
-                  className="rounded-full border border-border bg-[#0f0f17] px-3.5 py-2 text-sm font-medium text-gray-300 transition duration-300 hover:border-primary hover:bg-primary hover:text-white"
+                  className="rounded-full border border-border bg-[rgb(15,15,23)] px-3.5 py-2 text-sm font-medium text-gray-300 transition duration-300 hover:border-primary hover:bg-primary hover:text-white"
                 >
                   {tool}
                 </span>
