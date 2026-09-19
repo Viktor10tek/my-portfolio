@@ -37,7 +37,7 @@ const About = () => {
 
             <button
               onClick={() => setShowMore(!showMore)}
-              className="mt-8 inline-flex items-center gap-3 px-6 py-3.5 bg-primary text-white rounded-full font-semibold hover:bg-primary-dark hover:-translate-y-1 transition duration-300"
+              className="mt-8 inline-flex items-center mr-4 gap-3 px-6 py-3.5 bg-primary text-white rounded-full font-semibold hover:bg-primary-dark hover:-translate-y-1 transition duration-300"
             >
               {showMore ? "Show Less" : "Read My Journey"}
               <span className="text-lg">{showMore ? "↑" : "→"}</span>
