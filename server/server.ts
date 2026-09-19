@@ -11,9 +11,16 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-// ========== MIDDLEWARE==========
+// ================================
+// MIDDLEWARE
+// ================================
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://your-vercel-domain.vercel.app"],
+  }),
+);
+
 app.use(express.json());
 
 // ================================
@@ -36,7 +43,7 @@ const startServer = async () => {
   await connectDB();
 
   app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
   });
 };
 

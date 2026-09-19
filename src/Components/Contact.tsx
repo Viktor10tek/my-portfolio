@@ -29,6 +29,9 @@ const Contact = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Check the API URL being used by the frontend
+    console.log("API URL:", import.meta.env.VITE_API_URL);
+
     try {
       const response = await fetch(
         `${import.meta.env.VITE_API_URL}/api/contact`,
@@ -156,6 +159,7 @@ const Contact = () => {
               </div>
             )}
 
+            {/* ERROR MESSAGE */}
             {error && (
               <div className="mb-7 p-4 rounded-2xl bg-red-500/10 border border-red-500/30">
                 <p className="font-semibold text-red-400">
@@ -185,8 +189,8 @@ const Contact = () => {
                   placeholder="Enter your name"
                   required
                   className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white
-                   placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2
-                    focus:ring-primary/10 transition"
+                  placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2
+                  focus:ring-primary/10 transition"
                 />
               </div>
 
@@ -207,7 +211,9 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Enter your email"
                   required
-                  className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition"
+                  className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white
+                  placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2
+                  focus:ring-primary/10 transition"
                 />
               </div>
 
@@ -228,14 +234,17 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Tell me about your project..."
                   required
-                  className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition resize-none"
+                  className="w-full px-4 py-3.5 bg-[#0f0f17] border border-border text-white
+                  placeholder:text-gray-600 rounded-xl outline-none focus:border-primary focus:ring-2
+                  focus:ring-primary/10 transition resize-none"
                 />
               </div>
 
               {/* BUTTON */}
               <button
                 type="submit"
-                className="w-full mt-7 px-6 py-3.5 bg-primary text-white rounded-full font-semibold hover:bg-primary-dark hover:-translate-y-0.5 transition duration-300"
+                className="w-full mt-7 px-6 py-3.5 bg-primary text-white rounded-full
+                font-semibold hover:bg-primary-dark hover:-translate-y-0.5 transition duration-300"
               >
                 Send Message →
               </button>
